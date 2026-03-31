@@ -1,45 +1,64 @@
 # 🔍 Risk Monitoring with Sensors & Indicators of Compromise (IoCs)
 
-## 📝 Executive Summary
+# 🚨 Data Breach Incident Response Playbook (SOC Workflow)
 
-This project focused on creating a monitoring strategy using sensors to detect risks across key business systems in a lab environment. I selected sensors for an SQL database, Linux development server, and IIS web server using Paessler PRTG. Each sensor was mapped to known threat indicators and ranked based on system criticality and data sensitivity.
+## Overview
+I designed an incident response playbook to handle a simulated data breach involving unauthorized access to a company database.
 
-The report included a sensor mapping table, threshold recommendations, and a summary presentation for executive leadership. This project supports early detection, asset protection, and compliance with monitoring best practices.
+## Problem
+I wanted to address how organizations respond to data breaches efficiently, since unclear workflows can delay response, increase risk, and lead to regulatory issues.
 
----
+## Approach
+- I identified suspicious database activity (bulk data export)  
+- I traced the activity to a compromised account and IP address  
+- I defined investigation steps for internal vs external threats  
+- I created workflows for analyzing logs and identifying data exposure  
+- I outlined containment and remediation actions  
+- I developed both technical and non-technical communication reports  
 
-## 🎯 Objective
+## Key Decisions
+- **Structured escalation:** I defined when incidents should be escalated based on severity, scope, and data sensitivity  
+- **Role-based response:** I assigned responsibilities across SOC team, database specialist, and external consultant  
+- **Dual communication:** I created both technical and executive-level reports to ensure clarity across stakeholders  
 
-To evaluate monitoring sensors and recommend those best suited for detecting suspicious activity across key systems. Each sensor was linked to relevant IoCs, assigned a priority, and given a threshold recommendation to reduce false positives while enabling timely response.
+## Results
+- I created a structured and repeatable incident response workflow  
+- I defined clear escalation paths and stakeholder responsibilities  
+- I demonstrated how to manage both technical response and business communication during a breach  
 
----
+## Detection & Response Scenario
+If a data breach were confirmed, I would take the following steps:
 
-## 🛠 Tools & References
+1. **Validate the alert**
+   - Confirm unauthorized database access or data export  
+   - Check for false positives  
 
-- Paessler PRTG – monitoring platform for sensors  
-- MITRE ATT&CK – for mapping IoCs  
-- NIST CSF and ISO 27001 – reference frameworks  
-- Sensor justification table and visual outputs  
-- Slide presentation summarizing findings  
+2. **Investigate the source**
+   - Determine if the source is internal or external  
+   - Analyze access patterns and affected systems  
 
----
+3. **Escalate if necessary**
+   - Notify appropriate stakeholders (SOC team, leadership, external support)  
+   - Document findings  
 
-## 💡 Skills Demonstrated
+4. **Containment actions**
+   - Isolate affected systems  
+   - Disable compromised accounts  
+   - Block malicious IPs  
 
-- Identified appropriate sensors based on asset risk and threat activity  
-- Prioritized systems for monitoring using GRC-driven thinking  
-- Set alert thresholds based on sensitivity and business impact  
-- Linked monitoring actions to security frameworks and compliance goals  
-- Communicated findings in both technical and executive-friendly formats  
+5. **Improve detection**
+   - Refine monitoring rules  
+   - Enhance logging and alerting  
 
----
+## Example Outputs
+*(Optional: You can add screenshots or snippets of your reports here later)*
 
-## 🔄 Steps Taken
+## Impact
+- I demonstrated a full incident response workflow from detection to remediation  
+- I improved readiness for handling real-world data breaches  
+- I showed the ability to communicate effectively with both technical teams and leadership  
 
-1. Reviewed the organization’s system setup and identified three critical assets  
-2. Researched threats and indicators of compromise relevant to each system  
-3. Selected appropriate sensors in Paessler PRTG based on risk exposure and asset value  
-4. Mapped each sensor to known IoCs and justified their placement in a sensor table  
-5. Assigned priority levels to sensors and defined alert thresholds to reduce noise  
-6. Linked sensor actions to applicable security frameworks (e.g., NIST, ISO 27001)  
-7. Compiled a report and created a short slide presentation to summarize key findings  
+## Next Steps
+- I would map the workflow to MITRE ATT&CK techniques  
+- I would integrate the playbook into a SIEM environment  
+- I would test the playbook using simulated attack scenarios  
