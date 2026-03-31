@@ -1,5 +1,3 @@
-# 🔍 Risk Monitoring with Sensors & Indicators of Compromise (IoCs)
-
 # 🚨 Data Breach Incident Response Playbook (SOC Workflow)
 
 ## Overview
