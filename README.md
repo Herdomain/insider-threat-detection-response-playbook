@@ -1,4 +1,4 @@
-🔍 Risk Monitoring & Threat Detection (PRTG + IoCs)
+# 🔍 Risk Monitoring & Threat Detection (PRTG + IoCs)
 
 ## 📌 Overview
 I designed a proactive monitoring strategy using Paessler PRTG to detect potential threats across critical business systems, including an SQL database, Linux development environment, and IIS web server.
