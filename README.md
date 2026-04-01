@@ -1,62 +1,59 @@
-# 🚨 Data Breach Incident Response Playbook (SOC Workflow)
+🔍 Risk Monitoring & Threat Detection (PRTG + IoCs)
 
 ## 📌 Overview
-I designed an incident response playbook to handle a simulated data breach involving unauthorized access to a company database.
+I designed a proactive monitoring strategy using Paessler PRTG to detect potential threats across critical business systems, including an SQL database, Linux development environment, and IIS web server.
 
 ## ⚙️ Problem
-I wanted to address how organizations respond to data breaches efficiently, since unclear workflows can delay response, increase risk, and lead to regulatory issues.
+I wanted to address how organizations can detect threats early across key systems, since lack of monitoring can lead to data breaches, operational disruptions, and loss of sensitive information.
 
 ## ⚙️ Approach
-- I identified suspicious database activity (bulk data export)  
-- I traced the activity to a compromised account and IP address  
-- I defined investigation steps for internal vs external threats  
-- I created workflows for analyzing logs and identifying data exposure  
-- I outlined containment and remediation actions  
-- I developed both technical and non-technical communication reports  
+- I identified critical assets (SQL database, Linux system, IIS web server)  
+- I selected appropriate sensors in PRTG to monitor system activity  
+- I mapped each sensor to relevant Indicators of Compromise (IoCs)  
+- I defined alert thresholds based on expected system behavior  
+- I prioritized systems based on data sensitivity and business impact  
+- I aligned monitoring strategy with security best practices   
 
 ## 📊 Key Decisions
-- **Structured escalation:** I defined when incidents should be escalated based on severity, scope, and data sensitivity  
-- **Role-based response:** I assigned responsibilities across SOC team, database specialist, and external consultant  
-- **Dual communication:** I created both technical and executive-level reports to ensure clarity across stakeholders  
+- **Asset prioritization:** I focused on systems handling proprietary and financial data to reduce highest risk exposure  
+- **IoC mapping:** I linked each sensor to known attack behaviors (e.g., brute force, data exfiltration, privilege escalation)  
+- **Threshold design:** I defined high/low thresholds to balance detection accuracy and reduce false positives  
 
 ## 🎯 Results
-- I created a structured and repeatable incident response workflow  
-- I defined clear escalation paths and stakeholder responsibilities  
-- I demonstrated how to manage both technical response and business communication during a breach  
+- I created a structured monitoring strategy across multiple systems  
+- I identified key indicators of compromise tied to real-world attack patterns  
+- I demonstrated how sensor-based monitoring can support early threat detection and system protection  
+
+## Detection & Response Scenario  
 
 ## ❗ Detection & Response Scenario
-If a data breach were confirmed, I would take the following steps:
+If suspicious activity were detected, I would:
 
 1. **Validate the alert**
-   - Confirm unauthorized database access or data export  
-   - Check for false positives  
+   - Confirm abnormal sensor activity (e.g., unusual queries, login attempts, bandwidth spikes)  
+   - Compare against baseline behavior  
 
 2. **Investigate the source**
-   - Determine if the source is internal or external  
-   - Analyze access patterns and affected systems  
+   - Identify affected systems and entry points  
+   - Analyze logs for patterns (e.g., brute force, unauthorized access)  
 
 3. **Escalate if necessary**
-   - Notify appropriate stakeholders (SOC team, leadership, external support)  
-   - Document findings  
+   - Notify appropriate stakeholders based on severity  
+   - Document findings and potential impact  
 
 4. **Containment actions**
-   - Isolate affected systems  
-   - Disable compromised accounts  
-   - Block malicious IPs  
-
-5. **Improve detection**
-   - Refine monitoring rules  
-   - Enhance logging and alerting  
+   - Block suspicious activity (IPs, sessions, or processes)  
+   - Isolate affected systems if needed   
 
 ## 🖼️ Example Outputs
 * screenshots*
 
 ## 📚 Impact
-- I demonstrated a full incident response workflow from detection to remediation  
-- I improved readiness for handling real-world data breaches  
-- I showed the ability to communicate effectively with both technical teams and leadership  
+- I demonstrated how proactive monitoring supports threat detection and risk reduction  
+- I improved visibility into system activity across critical assets  
+- I aligned monitoring practices with real-world security frameworks (NIST, MITRE ATT&CK)   
 
 ## 📚 Next Steps
-- I would map the workflow to MITRE ATT&CK techniques  
-- I would integrate the playbook into a SIEM environment  
-- I would test the playbook using simulated attack scenarios  
+- I would integrate monitoring into a SIEM platform for centralized analysis  
+- I would automate alert correlation and response  
+- I would expand detection coverage with additional sensors (e.g., privilege escalation monitoring, WAF integration)  
