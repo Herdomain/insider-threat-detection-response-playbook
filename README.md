@@ -24,8 +24,6 @@ I wanted to address how organizations can detect threats early across key system
 - I identified key indicators of compromise tied to real-world attack patterns  
 - I demonstrated how sensor-based monitoring can support early threat detection and system protection  
 
-## Detection & Response Scenario  
-
 ## ❗ Detection & Response Scenario
 If suspicious activity were detected, I would:
 
