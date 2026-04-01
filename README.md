@@ -49,7 +49,7 @@ If a data breach were confirmed, I would take the following steps:
    - Enhance logging and alerting  
 
 ## 🖼️ Example Outputs
-*(Optional: You can add screenshots or snippets of your reports here later)*
+* screenshots*
 
 ## 📚 Impact
 - I demonstrated a full incident response workflow from detection to remediation  
