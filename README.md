@@ -15,8 +15,8 @@ I wanted to address how organizations manage insider threats, which can lead to 
 - I outlined technical controls such as DLP, MFA, RBAC, and monitoring systems  
 
 ## Key Decisions
-- **Lifecycle alignment:** I structured the playbook around the NIST incident response lifecycle to ensure consistency and industry alignment :contentReference[oaicite:0]{index=0}  
-- **Risk-based escalation:** I defined escalation triggers (e.g., repeated login failures, large data transfers, regulatory impact) to prioritize high-risk incidents :contentReference[oaicite:1]{index=1}  
+- **Lifecycle alignment:** I structured the playbook around the NIST incident response lifecycle to ensure consistency and industry alignment  
+- **Risk-based escalation:** I defined escalation triggers (e.g., repeated login failures, large data transfers, regulatory impact) to prioritize high-risk incidents 
 - **Policy integration:** I incorporated access control, log monitoring, and data retention policies to strengthen prevention and detection  
 
 ## Results
