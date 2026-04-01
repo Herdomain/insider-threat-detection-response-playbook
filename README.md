@@ -1,57 +1,71 @@
-# 🔍 Risk Monitoring & Threat Detection (PRTG + IoCs)
+# 🕵️ Insider Threat Detection & Incident Response Playbook (SOC + GRC)
 
-## 📌 Overview
-I designed a proactive monitoring strategy using Paessler PRTG to detect potential threats across critical business systems, including an SQL database, Linux development environment, and IIS web server.
+## Overview
+I designed an insider threat detection and incident response playbook to help organizations identify, analyze, and respond to risks caused by malicious, negligent, or compromised insiders.
 
-## ⚙️ Problem
-I wanted to address how organizations can detect threats early across key systems, since lack of monitoring can lead to data breaches, operational disruptions, and loss of sensitive information.
+## Problem
+I wanted to address how organizations manage insider threats, which can lead to data breaches, operational disruptions, and regulatory violations if not detected and handled effectively.
 
-## ⚙️ Approach
-- I identified critical assets (SQL database, Linux system, IIS web server)  
-- I selected appropriate sensors in PRTG to monitor system activity  
-- I mapped each sensor to relevant Indicators of Compromise (IoCs)  
-- I defined alert thresholds based on expected system behavior  
-- I prioritized systems based on data sensitivity and business impact  
-- I aligned monitoring strategy with security best practices   
+## Approach
+- I analyzed insider threat risks across critical business systems (e.g., customer data, financial systems, e-commerce platforms)  
+- I applied the NIST 4-step incident response lifecycle (Preparation, Detection, Containment, Post-Incident)  
+- I defined policies for data access, monitoring, and log retention  
+- I developed detection strategies using logs, behavioral analytics, and IoCs  
+- I created escalation criteria based on severity, impact, and regulatory risk  
+- I outlined technical controls such as DLP, MFA, RBAC, and monitoring systems  
 
-## 📊 Key Decisions
-- **Asset prioritization:** I focused on systems handling proprietary and financial data to reduce highest risk exposure  
-- **IoC mapping:** I linked each sensor to known attack behaviors (e.g., brute force, data exfiltration, privilege escalation)  
-- **Threshold design:** I defined high/low thresholds to balance detection accuracy and reduce false positives  
+## Key Decisions
+- **Lifecycle alignment:** I structured the playbook around the NIST incident response lifecycle to ensure consistency and industry alignment :contentReference[oaicite:0]{index=0}  
+- **Risk-based escalation:** I defined escalation triggers (e.g., repeated login failures, large data transfers, regulatory impact) to prioritize high-risk incidents :contentReference[oaicite:1]{index=1}  
+- **Policy integration:** I incorporated access control, log monitoring, and data retention policies to strengthen prevention and detection  
 
-## 🎯 Results
-- I created a structured monitoring strategy across multiple systems  
-- I identified key indicators of compromise tied to real-world attack patterns  
-- I demonstrated how sensor-based monitoring can support early threat detection and system protection  
+## Results
+- I created a structured insider threat response framework aligned with industry standards  
+- I defined clear escalation protocols and stakeholder responsibilities  
+- I demonstrated how to combine technical controls, policies, and workflows to manage insider threats  
 
-## ❗ Detection & Response Scenario
-If suspicious activity were detected, I would:
+## Detection & Response Scenario
+If an insider threat were detected, I would:
 
 1. **Validate the alert**
-   - Confirm abnormal sensor activity (e.g., unusual queries, login attempts, bandwidth spikes)  
-   - Compare against baseline behavior  
+   - Confirm unusual activity (e.g., large data transfers, unauthorized access)  
+   - Compare behavior against baseline  
 
 2. **Investigate the source**
-   - Identify affected systems and entry points  
-   - Analyze logs for patterns (e.g., brute force, unauthorized access)  
+   - Identify affected systems and data  
+   - Analyze logs, user activity, and access patterns  
 
 3. **Escalate if necessary**
-   - Notify appropriate stakeholders based on severity  
-   - Document findings and potential impact  
+   - Classify severity (low → critical)  
+   - Notify stakeholders (SOC, legal, leadership)  
 
 4. **Containment actions**
-   - Block suspicious activity (IPs, sessions, or processes)  
-   - Isolate affected systems if needed   
+   - Disable compromised accounts  
+   - Isolate affected systems  
+   - block unauthorized access  
 
-## 🖼️ Example Outputs
-* screenshots*
+5. **Eradication & recovery**
+   - Remove unauthorized access or malware  
+   - Reset credentials and patch vulnerabilities  
+   - Restore systems from backups  
 
-## 📚 Impact
-- I demonstrated how proactive monitoring supports threat detection and risk reduction  
-- I improved visibility into system activity across critical assets  
-- I aligned monitoring practices with real-world security frameworks (NIST, MITRE ATT&CK)   
+6. **Post-incident improvement**
+   - Conduct lessons learned review  
+   - Update policies and detection strategies  
 
-## 📚 Next Steps
-- I would integrate monitoring into a SIEM platform for centralized analysis  
-- I would automate alert correlation and response  
-- I would expand detection coverage with additional sensors (e.g., privilege escalation monitoring, WAF integration)  
+## Example Outputs
+- Incident response workflow diagram  
+- Escalation protocol flow  
+- Sample insider threat incident report  
+
+*(Add your images here—these are excellent visual proof)*
+
+## Impact
+- I demonstrated a complete insider threat detection and response strategy  
+- I combined SOC operations with GRC policies and compliance requirements  
+- I improved understanding of how organizations manage insider risks at scale  
+
+## Next Steps
+- I would integrate detection into a SIEM platform  
+- I would automate alert correlation and response workflows  
+- I would expand behavioral analytics and insider threat detection capabilities  
