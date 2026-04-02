@@ -21,19 +21,19 @@ Effective insider threat detection combines technical monitoring with behavioral
 Detection relies on a layered approach across three sources:
 **Log Analysis** — Authentication logs, file access records, and network activity are retained and monitored against established baselines to surface anomalies.
  
-**Behavioral Analytics** — User activity is compared against role-based norms. Deviations — such as a finance employee accessing engineering repositories — trigger automated alerts for review.
+**Behavioral Analytics** — User activity is compared against role-based norms. Deviations, such as, a finance employee accessing engineering repositories trigger automated alerts for review.
 
 **Indicators of Compromise (IoCs)** — Known threat patterns such as credential sharing, unauthorized USB usage, and mass data downloads are flagged in real time.
 
 ## Response Workflow
 When a potential insider threat is detected, the response follows this sequence:
 
-**Validate** — Confirm the alert against baseline behavior; rule out false positives before escalating
-**Investigate** — Identify affected systems, analyze logs and access patterns, determine scope and intent
-**Escalate** Classify severity (Low → Critical) and notify appropriate stakeholders — SOC, legal, HR, or leadership depending on classification
-**Contain** — Disable compromised accounts, revoke elevated permissions, isolate affected systems
-**Eradicate & Recover** — Remove unauthorized access, reset credentials, patch vulnerabilities, restore from clean backups
-**Review** — Conduct a lessons learned session, update detection rules, and refine access policies based on findings
+**1. Validate** — Confirm the alert against baseline behavior; rule out false positives before escalating
+**2. Investigate** — Identify affected systems, analyze logs and access patterns, determine scope and intent
+**3. Escalate** Classify severity (Low → Critical) and notify appropriate stakeholders — SOC, legal, HR, or leadership depending on classification
+**4. Contain** — Disable compromised accounts, revoke elevated permissions, isolate affected systems
+**5. Eradicate & Recover** — Remove unauthorized access, reset credentials, patch vulnerabilities, restore from clean backups
+**6. Review** — Conduct a lessons learned session, update detection rules, and refine access policies based on findings
 
 ## 🛡️ Controls & Compliance
 
