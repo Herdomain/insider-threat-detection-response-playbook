@@ -29,10 +29,15 @@ Detection relies on a layered approach across three sources:
 When a potential insider threat is detected, the response follows this sequence:
 
 **1. Validate** — Confirm the alert against baseline behavior; rule out false positives before escalating
+
 **2. Investigate** — Identify affected systems, analyze logs and access patterns, determine scope and intent
+
 **3. Escalate** Classify severity (Low → Critical) and notify appropriate stakeholders — SOC, legal, HR, or leadership depending on classification
+
 **4. Contain** — Disable compromised accounts, revoke elevated permissions, isolate affected systems
+
 **5. Eradicate & Recover** — Remove unauthorized access, reset credentials, patch vulnerabilities, restore from clean backups
+
 **6. Review** — Conduct a lessons learned session, update detection rules, and refine access policies based on findings
 
 ## 🛡️ Controls & Compliance
