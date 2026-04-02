@@ -1,11 +1,14 @@
  # 🕵️ Insider Threat Detection & Incident Response Playbook
-Insider threats are among the hardest risks to detect — and among the most damaging when missed. Unlike external attacks, they originate from people who already have legitimate access. This playbook defines how organizations identify, escalate, and contain insider threats before they become breaches, operational failures, or regulatory violations.
+Insider threats are among the hardest risks to detect and among the most damaging when missed. Unlike external attacks, they originate from people who already have legitimate access. 
+
+This playbook defines how organizations identify, escalate, and contain insider threats before they become breaches, operational failures, or regulatory violations.
 
 ## The Threat
 An employee downloads an unusual volume of customer records before resigning. A contractor accesses financial systems outside their role. A compromised account begins moving laterally through internal infrastructure. These scenarios share a common challenge: standard perimeter defenses don't catch them. Detecting insider threats requires behavioral baselines, access monitoring, and a clear response workflow — not just firewalls.
 
 ## What This Playbook Covers
-Built around the NIST 4-step Incident Response Lifecycle — Preparation, Detection, Containment, and Post-Incident Review — this playbook provides a structured, repeatable framework for managing insider risk across three threat profiles:
+Built around the NIST 4-step Incident Response Lifecycle — Preparation, Detection, Containment, and Post-Incident
+Review — this playbook provides a structured, repeatable framework for managing insider risk across three threat profiles:
 
 Malicious insiders — employees or contractors intentionally exfiltrating data or sabotaging systems
 Negligent insiders — users who expose sensitive data through careless behavior or poor security hygiene
