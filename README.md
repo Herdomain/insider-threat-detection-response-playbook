@@ -1,71 +1,54 @@
-# 🕵️ Insider Threat Detection & Incident Response Playbook (SOC + GRC)
+🕵️ Insider Threat Detection & Incident Response Playbook
+Insider threats are among the hardest risks to detect — and among the most damaging when missed. Unlike external attacks, they originate from people who already have legitimate access. This playbook defines how organizations identify, escalate, and contain insider threats before they become breaches, operational failures, or regulatory violations.
 
-## Overview
-I designed an insider threat detection and incident response playbook to help organizations identify, analyze, and respond to risks caused by malicious, negligent, or compromised insiders.
+The Threat
+An employee downloads an unusual volume of customer records before resigning. A contractor accesses financial systems outside their role. A compromised account begins moving laterally through internal infrastructure. These scenarios share a common challenge: standard perimeter defenses don't catch them. Detecting insider threats requires behavioral baselines, access monitoring, and a clear response workflow — not just firewalls.
 
-## Problem
-I wanted to address how organizations manage insider threats, which can lead to data breaches, operational disruptions, and regulatory violations if not detected and handled effectively.
+What This Playbook Covers
+Built around the NIST 4-step Incident Response Lifecycle — Preparation, Detection, Containment, and Post-Incident Review — this playbook provides a structured, repeatable framework for managing insider risk across three threat profiles:
 
-## Approach
-- I analyzed insider threat risks across critical business systems (e.g., customer data, financial systems, e-commerce platforms)  
-- I applied the NIST 4-step incident response lifecycle (Preparation, Detection, Containment, Post-Incident)  
-- I defined policies for data access, monitoring, and log retention  
-- I developed detection strategies using logs, behavioral analytics, and IoCs  
-- I created escalation criteria based on severity, impact, and regulatory risk  
-- I outlined technical controls such as DLP, MFA, RBAC, and monitoring systems  
+Malicious insiders — employees or contractors intentionally exfiltrating data or sabotaging systems
+Negligent insiders — users who expose sensitive data through careless behavior or poor security hygiene
+Compromised insiders — legitimate accounts hijacked by external threat actors
 
-## Key Decisions
-- **Lifecycle alignment:** I structured the playbook around the NIST incident response lifecycle to ensure consistency and industry alignment  
-- **Risk-based escalation:** I defined escalation triggers (e.g., repeated login failures, large data transfers, regulatory impact) to prioritize high-risk incidents 
-- **Policy integration:** I incorporated access control, log monitoring, and data retention policies to strengthen prevention and detection  
 
-## Results
-- I created a structured insider threat response framework aligned with industry standards  
-- I defined clear escalation protocols and stakeholder responsibilities  
-- I demonstrated how to combine technical controls, policies, and workflows to manage insider threats  
+Detection Strategy
+Effective insider threat detection combines technical monitoring with behavioral analysis. Key indicators tracked include repeated authentication failures, large or unusual data transfers, access to systems outside a user's normal role, and activity outside of business hours.
+Detection relies on a layered approach across three sources:
+Log Analysis — Authentication logs, file access records, and network activity are retained and monitored against established baselines to surface anomalies.
+Behavioral Analytics — User activity is compared against role-based norms. Deviations — such as a finance employee accessing engineering repositories — trigger automated alerts for review.
+Indicators of Compromise (IoCs) — Known threat patterns such as credential sharing, unauthorized USB usage, and mass data downloads are flagged in real time.
 
-## Detection & Response Scenario
-If an insider threat were detected, I would:
+Response Workflow
+When a potential insider threat is detected, the response follows this sequence:
 
-1. **Validate the alert**
-   - Confirm unusual activity (e.g., large data transfers, unauthorized access)  
-   - Compare behavior against baseline  
+Validate — Confirm the alert against baseline behavior; rule out false positives before escalating
+Investigate — Identify affected systems, analyze logs and access patterns, determine scope and intent
+Escalate — Classify severity (Low → Critical) and notify appropriate stakeholders — SOC, legal, HR, or leadership depending on classification
+Contain — Disable compromised accounts, revoke elevated permissions, isolate affected systems
+Eradicate & Recover — Remove unauthorized access, reset credentials, patch vulnerabilities, restore from clean backups
+Review — Conduct a lessons learned session, update detection rules, and refine access policies based on findings
 
-2. **Investigate the source**
-   - Identify affected systems and data  
-   - Analyze logs, user activity, and access patterns  
 
-3. **Escalate if necessary**
-   - Classify severity (low → critical)  
-   - Notify stakeholders (SOC, legal, leadership)  
+Controls & Policies
+ControlPurposeData Loss Prevention (DLP)Detects and blocks unauthorized data exfiltrationMulti-Factor Authentication (MFA)Reduces risk of compromised credential abuseRole-Based Access Control (RBAC)Limits access to what each role strictly requiresLog Monitoring & RetentionProvides audit trail for investigation and complianceEscalation ProtocolsEnsures consistent, risk-based response across severity levels
 
-4. **Containment actions**
-   - Disable compromised accounts  
-   - Isolate affected systems  
-   - block unauthorized access  
+Compliance Alignment
+This playbook addresses insider threat requirements across major frameworks:
 
-5. **Eradication & recovery**
-   - Remove unauthorized access or malware  
-   - Reset credentials and patch vulnerabilities  
-   - Restore systems from backups  
+NIST SP 800-61 — Computer Security Incident Handling Guide
+ISO/IEC 27001:2022 — Access control, incident management, and log monitoring
+GDPR / HIPAA — Data breach response obligations and retention requirements
+SOC 2 Type II — Availability, confidentiality, and security monitoring controls
 
-6. **Post-incident improvement**
-   - Conduct lessons learned review  
-   - Update policies and detection strategies  
 
-## Example Outputs
-- Incident response workflow diagram  
-- Escalation protocol flow  
-- Sample insider threat incident report  
+Artifacts & Outputs
 
-*(Add your images here—these are excellent visual proof)*
+Incident response workflow diagram
+Severity-based escalation protocol
+Sample insider threat incident report
+Access control and log retention policy definitions
 
-## Impact
-- I demonstrated a complete insider threat detection and response strategy  
-- I combined SOC operations with GRC policies and compliance requirements  
-- I improved understanding of how organizations manage insider risks at scale  
 
-## Next Steps
-- I would integrate detection into a SIEM platform  
-- I would automate alert correlation and response workflows  
-- I would expand behavioral analytics and insider threat detection capabilities  
+📌 Workflow diagrams and sample incident report coming soon.
+
