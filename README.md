@@ -80,13 +80,7 @@ When a potential insider threat is detected, the response follows this sequence:
 ## Compliance Alignment
 This playbook addresses insider threat requirements across major frameworks:
 
-**NIST SP 800-61** — Computer Security Incident Handling Guide
-
-**ISO/IEC 27001:2022** — Access control, incident management, and log monitoring
-
-**GDPR / HIPAA** — Data breach response obligations and retention requirements
-
-**SOC 2 Type II** — Availability, confidentiality, and security monitoring controls
+Aligned with NIST SP 800-61, ISO/IEC 27001, GDPR/HIPAA, and SOC 2 Type II.
 
 ---
 
