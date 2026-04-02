@@ -10,9 +10,9 @@ An employee downloads an unusual volume of customer records before resigning. A 
 Built around the NIST 4-step Incident Response Lifecycle — Preparation, Detection, Containment, and Post-Incident
 Review — this playbook provides a structured, repeatable framework for managing insider risk across three threat profiles:
 
-Malicious insiders — employees or contractors intentionally exfiltrating data or sabotaging systems
-Negligent insiders — users who expose sensitive data through careless behavior or poor security hygiene
-Compromised insiders — legitimate accounts hijacked by external threat actors
+**Malicious insiders** — employees or contractors intentionally exfiltrating data or sabotaging systems
+**Negligent insiders**— users who expose sensitive data through careless behavior or poor security hygiene
+**Compromised insiders** — legitimate accounts hijacked by external threat actors
 
 
 ## Detection Strategy
