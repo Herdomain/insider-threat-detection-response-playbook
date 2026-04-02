@@ -3,10 +3,14 @@ Insider threats are among the hardest risks to detect and among the most damagin
 
 This playbook defines how organizations identify, escalate, and contain insider threats before they become breaches, operational failures, or regulatory violations.
 
+---
+
 ## The Threat
 An employee downloads an unusual volume of customer records before resigning. A contractor accesses financial systems outside their role. A compromised account begins moving laterally through internal infrastructure.
 
 These scenarios share a common challenge: standard perimeter defenses don't catch them. Detecting insider threats requires behavioral baselines, access monitoring, and a clear response workflow.
+
+---
 
 ## What This Playbook Covers
 Built around the NIST 4-step Incident Response Lifecycle — Preparation, Detection, Containment, and Post-Incident
@@ -21,6 +25,7 @@ Review, this playbook provides a structured, repeatable framework for managing i
 **Compromised insiders**
 - Legitimate accounts hijacked by external threat actors
 
+---
 
 ## Detection Strategy
 Effective insider threat detection combines technical monitoring with behavioral analysis. Key indicators tracked include repeated authentication failures, large or unusual data transfers, access to systems outside a user's normal role, and activity outside of business hours.
@@ -35,6 +40,8 @@ Detection relies on a layered approach across three sources:
 
 **Indicators of Compromise (IoCs)** 
 - Known threat patterns such as credential sharing, unauthorized USB usage, and mass data downloads are flagged in real time.
+
+---
 
 ## Response Workflow
 When a potential insider threat is detected, the response follows this sequence:
@@ -57,6 +64,8 @@ When a potential insider threat is detected, the response follows this sequence:
 **6. Review**
 - Conduct a lessons learned session, update detection rules, and refine access policies based on findings
 
+---
+
 ## 🛡️ Controls & Compliance
 
 | Control        | Purpose                                   |
@@ -65,6 +74,8 @@ When a potential insider threat is detected, the response follows this sequence:
 | **MFA**        | Reduces compromised credential risk       |
 | **RBAC**       | Limits access based on role requirements  |
 | **Log Retention** | Supports investigation and auditing    |
+
+---
 
 ## Compliance Alignment
 This playbook addresses insider threat requirements across major frameworks:
@@ -77,6 +88,7 @@ This playbook addresses insider threat requirements across major frameworks:
 
 **SOC 2 Type II** — Availability, confidentiality, and security monitoring controls
 
+---
 
 ## Artifacts & Outputs
 
