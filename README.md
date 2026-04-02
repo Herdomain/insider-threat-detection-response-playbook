@@ -26,6 +26,7 @@ Review, this playbook provides a structured, repeatable framework for managing i
 Effective insider threat detection combines technical monitoring with behavioral analysis. Key indicators tracked include repeated authentication failures, large or unusual data transfers, access to systems outside a user's normal role, and activity outside of business hours.
 
 Detection relies on a layered approach across three sources:
+
 **Log Analysis**
 - Authentication logs, file access records, and network activity are retained and monitored against established baselines to surface anomalies.
  
