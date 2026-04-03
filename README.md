@@ -44,25 +44,14 @@ Detection relies on a layered approach across three sources:
 ---
 
 ## Response Workflow
-When a potential insider threat is detected, the response follows this sequence:
 
-**1. Validate** 
-- Confirm the alert against baseline behavior; rule out false positives before escalating
+Validate → Contain → Investigate → Escalate → Eradicate & Recover → Review
 
-**2. Investigate** 
-- Identify affected systems, analyze logs and access patterns, determine scope and intent
-
-**3. Escalate** 
-- Classify severity (Low → Critical) and notify appropriate stakeholders — SOC, legal, HR, or leadership depending on classification
-
-**4. Contain**
-- Disable compromised accounts, revoke elevated permissions, isolate affected systems
-
-**5. Eradicate & Recover**
-- Remove unauthorized access, reset credentials, patch vulnerabilities, restore from clean backups
-
-**6. Review**
-- Conduct a lessons learned session, update detection rules, and refine access policies based on findings
+| Tier | Team | Timeframe |
+|---|---|---|
+| Tier 1 | SOC Analysts & IT Support | Within 30 minutes |
+| Tier 2 | CSIRT, Legal, HR | Within 2 hours |
+| Tier 3 | CEO, President, CFO | Within 24 hours |
 
 ---
 
